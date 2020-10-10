@@ -1,0 +1,44 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="./static/ext_images/rahul.jpg" class="rounded float-left" width="350" height="600" alt="Men" >
+    </div>
+    <div class="col-md-7 mr-1">
+        <h3 class="">Hey, Hi! <strong>I'm Rahul Gupta..</strong></h3><hr><br>
+        <h5 class=" text-success"> A small intro about myself.. </h5>
+                  <p>I am a <b>Certified Python Programmer and currently working as a software developer at Teamnest HR Solutions Pvt. Ltd. </b>
+    and currently working on the <strong> Django Framework </strong>.and also have good knowledge of frontend side requirements like JS, 
+    Jquary, Bootstrap.. etc. <br><br>
+
+    <div class="row" >
+      <div class="col-md-6">
+        <div class="form-group">
+          <span class="border btn btn-success border-primary" data-toggle="collapse" data-target="#objective"> My Objective &nbsp; <i class="fas fa-caret-square-down"></i></span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <span class="border btn btn-success border-primary" data-toggle="collapse" data-target="#think"> My Quote &nbsp; <i class="fas fa-caret-square-down"></i></span>
+        </div>
+      </div>
+    </div>
+        <div id="objective" class="collapse mb-3">
+        <b>Objective</b>:- To work for an organization which provides me the opportunity to improve my skills and knowledge to growth along with the organization objective.
+        </div>
+        <div id="think" class="collapse mb-3">
+        <b>Qoute</b>:- Be Positive 
+        </div>
+
+        <p><a class="btn btn-primary btn-block mt-5" href="{% url 'home:about' %}"> Click here to know about my Experiences and Internship  &nbsp; &raquo;</a></p>
+
+    </div>
+
+  </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,28 @@
+{% extends 'home/base.html' %}
+
+
+{% block content %}
+<style>
+    .full{
+        height: 100%;
+    }
+</style>
+
+<div class="container full">
+    <div class="card-block">
+        <h5 class=" text-success mt-5"> <strong class="">Dear {{name}} ,</strong> Congratulation !! Your message sent successfully. </h5><hr><br>
+        <pre class="text-primary mt-5 mb-5">
+            Thanks {{name}} for your valuable message. I will reply you soon on provided contact details. 
+        </pre>
+        <div class="row">
+            <div class=" col-md-4">
+                <a href="{% url 'home:dashboard' %}" class="btn btn-danger ml-5" > Back to Dashboard Page </a>
+            </div>
+            <div class="col-md-4">
+                <a href="{% url 'home:contact' %}" class="btn btn-primary" > Send Another Response </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

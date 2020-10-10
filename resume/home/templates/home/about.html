@@ -1,0 +1,135 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+<div class=" " id="">
+  <span class="border-primary  text-dark form-control bg-info"><h3> <i class="material-icons" >person_outline</i>  Experiences and Other skills </h3></span>
+    <hr>
+
+  <p class="small text-secondary ml-3">
+      Here you will get details about my Experiences and Skills
+  </p>
+
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs border-primary">
+      <li class="nav-item ">
+        <a class="nav-link active" href="#home">My Experiences</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#menu1">My Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#menu2">Internship and other skills</a>
+      </li>
+    </ul>
+  
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="home" class="container tab-pane active"><br>
+        <span class="border-primary  text-dark form-control bg-info mb-5"><h5> <i class="fas fa-graduation-cap" ></i>&nbsp;My Experiences</h5></span>
+        <table class="table table-bordered table-hover table-dark">
+          <thead>
+            <tr>
+              <th>Company Name</th>
+              <th> About Company </th>
+              <th> Duration </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Teamnest Employee Services Pvt Ltd</td>
+              <td>
+                TeamNest is a cloud platform to simplify HR services for organizations of all sizes. We offer attendance management, leave and expense tracking, payroll processing, employee self-service and compliance management.
+              </td>
+              <td>Sep 2019 and still working</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="menu1" class="container tab-pane fade"><br>
+        <span class="border-primary  text-dark form-control bg-info mb-1"><h5> <i class="fas fa-graduation-cap" ></i>&nbsp;My skills</h5></span>
+
+        <p class="small text-secondary mb-2 ml-2" > <span class="small text-danger" >* &nbsp; </span>click on below button to see details on same page </p>
+        <div class="row">
+          <div class="col-md-3">
+            <a href="javascript.void(0)" type="button" class="btn btn1 btn-primary" data-toggle="collapse" data-target="#demo">Languages I Know &nbsp; <i class="fas fa-caret-square-down"></i></a>
+            <div id="demo" class="collapse">
+                <br>
+                <ol class="list-group">
+                    <li class="list-group-item list-group-item-light">Python</li>
+                    <li class="list-group-item list-group-item-light">Javascript</li>
+                    <li class="list-group-item list-group-item-light">C/C++</li>
+                </ol>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript.void(0)" type="button" class="btn btn1 btn-primary" data-toggle="collapse" data-target="#demo4"> Frameworks I Know &nbsp; <i class="fas fa-caret-square-down"></i></a>
+            <div id="demo4" class="collapse">
+                <br>
+                <ol class="list-group">
+                  <li class="list-group-item list-group-item-light">Django</li>
+                  <li class="list-group-item list-group-item-light">Django Restful API</li>
+              </ol>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript.void(0)" type="button" class="btn btn1  btn-primary" data-toggle="collapse" data-target="#demo2">Frontend Tools I Know &nbsp; <i class="fas fa-caret-square-down"></i></a>
+            <div id="demo2" class="collapse">
+                <br>
+                <ol class="list-group">
+                  <li class="list-group-item list-group-item-light">HTML/CSS</li>
+                  <li class="list-group-item list-group-item-light">Javascript</li>
+                  <li class="list-group-item list-group-item-light">Jquary</li>
+                  <li class="list-group-item list-group-item-light">Bootstrap</li>
+              </ol>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript.void(0)" type="button" class="btn btn1 btn-primary" data-toggle="collapse" data-target="#demo3">Others skills I Know &nbsp; <i class="fas fa-caret-square-down"></i></a>
+            <div id="demo3" class="collapse">
+                <br>
+                <ol class="list-group">
+                  <li class="list-group-item list-group-item-light">Pandas</li>
+                  <li class="list-group-item list-group-item-light">Numpy</li>
+                  <li class="list-group-item list-group-item-light">SQL</li>
+              </ol>
+            </div>
+          </div>
+        </div>     
+      </div>
+      <div id="menu2" class="container tab-pane fade"><br>
+        <span class="border-primary  text-dark form-control bg-info mb-5"><h5> <i class="fas fa-graduation-cap" ></i>&nbsp;My college time Internship and Experiences</h5></span>
+
+        <table class="table table-bordered table-hover table-dark">
+          <thead>
+            <tr>
+              <th>Company Name</th>
+              <th> About Company </th>
+              <th> Duration </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tec System Pvt Ltd</td>
+              <td>
+                1.Manufacturing of the digital weighing machine with its Technical details. <br>
+                2.How to deal with customers to understand their problems and provide them proper solution on time.
+              </td>
+              <td>June 2018 -July 2018</td>
+            </tr>
+            <tr>
+              <td>Home Tutor</td>
+              <td>Teaching Maths ,Physics and some other engineering subjects.</td>
+              <td> From 2015 to 2016</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+    
+
+  {% endblock content %}
+
+

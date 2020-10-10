@@ -1,0 +1,91 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+
+<div class="">
+  <div class="row">
+    <div class="col-md-3 mr-1">
+      <span class="border text-dark form-control bg-success"><h5>My Contatc Details : </h5></span><hr><br>
+      <div class="form-group">
+        <label for="uname">
+          <span class="	fas fa-user-graduate"></span>
+          Educations</label>
+        <span class="border form-control border-primary">Graduation from Mumbai University</span>
+      </div>
+      <div class="form-group">
+        <label for="uname">
+          <i class="fa fa-envelope"></i> Email id</label>
+        <span class="border form-control border-primary">MrRahulGupta0096@gmail.com</span>
+      </div>
+      <div class="form-group">
+        <label for="uname">
+          <i class="fa fa-phone-square"></i> Contatc No.</label>
+        <span class="border form-control border-primary">9865896315</span>
+      </div>
+
+      <p class="mt-5">Connect with me</p>
+      <div class="form-group">
+        <a href="https://www.linkedin.com/in/rahul-gupta-1b2578170/" class="btn btn-primary form-control mb-2"> <i class="fab fa-linkedin"></i> &nbsp; LinkedIn</a>
+        <a href="https://www.linkedin.com/in/rahul-gupta-1b2578170/" class="btn btn-primary form-control"> <i class="fab fa-github-square"></i> &nbsp; GitHub</a>
+      </div>
+
+      <br><hr> 
+      <p class="small"> <span class="text-danger" >**</span>Welcome to your feedback and suggestions
+        <br>
+        send me your response by filling the form 
+      </p>
+    </div>
+    <div class="col-md-7 ml-1">
+
+
+      <h2>Do you have any message for me?</h2>
+      <p>send me your message to me with following details?</p>
+      <form action="{% url 'home:contact' %}" class="was-validated" method="POST">
+          {% csrf_token %}
+        <div class="form-group">
+          <label for="uname"><i class="fas fa-child"></i> &nbsp;Your Name:</label>
+          <input type="text" class="form-control" id="uname" placeholder="Enter good name" name="uname" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="email"><i class="fa fa-envelope"></i> &nbsp; Email Id:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email id" name="email" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="mobile"> <i class="fa fa-phone-square"></i> &nbsp; Mobile Number:</label>
+            <input type="text" class="form-control" id="mobile" placeholder="Enter mobile number.. if you dont want to share then just type 'No' " name="mobile" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="message">Your Message:</label>
+            <input type="text" class="form-control" id="message" placeholder="Enter your message for me ?" name="message" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="role" > Are you here for hiring purpose?
+            <div class="small text-secondary">Leave it uncheck if you are just here to see portfolio.</div>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock content %}
