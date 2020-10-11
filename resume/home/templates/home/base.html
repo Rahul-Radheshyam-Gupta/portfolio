@@ -16,8 +16,7 @@
     body {
       height: 100%;
       margin: 0px;
-      background: "./static/ext_images/nature.jpeg";
-      background-color: #cccccc;
+      background-color: #ebe5e5
     }
     
     .bg {
@@ -34,48 +33,46 @@
       width: 255px;
     }
 
+.container{
+  height: 100%;
+  width:100%;
+  justify-content :center;
+  align-items :center;
+  display: flex;
+  }
 
 
-
-    </style>
+</style>
 </head>
 <body class="">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-default navbar-fixed-top">
         <ul class="navbar-nav">
-          <li class="nav-item">
+          <li class="nav-item {% if clicked_on == 'dashboard' %} active {% endif %}">
             <a class="nav-link" href="{% url 'home:dashboard' %}">Dashboard</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item {% if clicked_on == 'about' %} active {% endif %}">
             <a class="nav-link" href="{% url 'home:about' %}">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item {% if clicked_on == 'contact' %} active {% endif %}">
             <a class="nav-link" href="{% url 'home:contact' %}">Contact</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item {% if clicked_on == 'project' %} active {% endif %}">
             <a class="nav-link " href="{% url 'home:project' %}">Project</a>
           </li>
-        </ul>
+        </ul>>
+
+          <a href="{{ cv.cv.url }} " target="_blank" class="btn btn-primary  ml-5">See and Download my updated CV</a>
+
       </nav>
+      <main role="main">
+          <div class="jumbotron">
+          {% block content %}
 
-    <main role="main">
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
+          {% endblock content %}
+        </div>
+        </div>
 
-
-
-
-{% block content %}
-
-{% endblock content %}
-
-
-     </div> <!-- /container -->
-    </div>
-
-    </main>
-    
-
-
+      </main>
 
     <footer class="container">
       <p>&copy; CopyRight 2020-2021</p>
@@ -83,13 +80,91 @@
 
 
 
-    <script>
-      $(document).ready(function(){
-        $(".nav-tabs a").click(function(){
-          $(this).tab('show');
-        });
-      });
-    </script>
+<script>
+$(document).ready(function(){
+  $(".nav-tabs a").click(function(){
+    $(this).tab('show');
+  });
+});
+
+
+class TextScramble {
+  constructor(el) {
+    this.el = el
+    this.chars = '!<>-_\\/[]{}—=+*^?#________'
+    this.update = this.update.bind(this)
+  }
+  setText(newText) {
+    const oldText = this.el.innerText
+    const length = Math.max(oldText.length, newText.length)
+    const promise = new Promise((resolve) => this.resolve = resolve)
+    this.queue = []
+    for (let i = 0; i < length; i++) {
+      const from = oldText[i] || ''
+      const to = newText[i] || ''
+      const start = Math.floor(Math.random() * 40)
+      const end = start + Math.floor(Math.random() * 40)
+      this.queue.push({ from, to, start, end })
+    }
+    cancelAnimationFrame(this.frameRequest)
+    this.frame = 0
+    this.update()
+    return promise
+  }
+  update() {
+    let output = ''
+    let complete = 0
+    for (let i = 0, n = this.queue.length; i < n; i++) {
+      let { from, to, start, end, char } = this.queue[i]
+      if (this.frame >= end) {
+        complete++
+        output += to
+      } else if (this.frame >= start) {
+        if (!char || Math.random() < 0.28) {
+          char = this.randomChar()
+          this.queue[i].char = char
+        }
+        output += `<span class="dud">${char}</span>`
+      } else {
+        output += from
+      }
+    }
+    this.el.innerHTML = output
+    if (complete === this.queue.length) {
+      this.resolve()
+    } else {
+      this.frameRequest = requestAnimationFrame(this.update)
+      this.frame++
+    }
+  }
+  randomChar() {
+    return this.chars[Math.floor(Math.random() * this.chars.length)]
+  }
+}
+
+const phrases = [
+  'Be Positive',
+  'Never Give up',
+  'Be Your better version',
+  'Keep Learning',
+  'Keep Smile',
+  'Be Creative',
+  'I can n i Will'
+]
+
+const el = document.querySelector('.text')
+const fx = new TextScramble(el)
+
+let counter = 0
+const next = () => {
+  fx.setText(phrases[counter]).then(() => {
+    setTimeout(next, 800)
+  })
+  counter = (counter + 1) % phrases.length
+}
+
+next()
+</script>
       
 
 

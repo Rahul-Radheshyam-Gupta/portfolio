@@ -1,50 +1,70 @@
 {% extends 'home/base.html' %}
+{% load static %}
 
 {% block content %}
 <style>
 
-.box{
-    width: 100%;
-    height: 80%;
-    }
+.box {
+  height: 500px;
+  width: 100%;
+  background-color:#343a40;
+}
+.project-desc {
+  height: 70px;
+
+  background-color:#f7f7f8;
+}
 </style>
 <div class=" " id="">
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="card bg-dark box" >
-                    <div class="card-body">
-                        <span class="border-primary text-center text-dark form-control mb-5"><h5> My Academic Projects </h5> </span>
-                    <p class="card-text text-center text-white mt-3 mb-5">Its list of final year project and some mini projects which i have done in my academic year.</p>
-                    <p class="card-text text-center text-white">Programing Languages : {{project.languages}}</p>
 
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            {% for project in projects %}
+                <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.counter}}"></li>
+            {% endfor %}
+        </ol>
+        <div class="carousel-inner d-block w-400 h-600">
+            <div class="carousel-item active box">
+                <div class="card bg-dark" >
+                    <div class="card-body">
+                            <span class="border-primary text-center bg-blue text-dark form-control project-desc"><h2> My Academic Projects </h2> </span>
+                        <p class="card-text text-center text-white mt-3 mb-5 font-weight-bold m-5">Here! You will have the list of final year project and some mini projects which i have done in my academic year.</p>
+
+                            <h2><p class="card-text text-center text-white mt-3 mb-5 font-weight-bold m-5">Swipe left and right arrow to see project details</p></h2>
                     </div>
                 </div>
             </div>
             {% for project in projects %}
-                <div class="carousel-item ">
-                    <div class="card bg-dark box" >
+                <div class="carousel-item box">
+                    <div class="card bg-dark m-5" >
                         <div class="card-body">
-                            <span class="border-primary text-center text-dark form-control mb-5"><h5> Project Name: {{project.name}} </h5> </span>
-                        <p class="card-text text-center text-white">{{project.description}}</p>
-                        <div class="row">
-                            <div class=" col-md-4">
-                                <p class="card-text text-center text-white">Sem : {{project.sem}}</p>
+                            <span class="border-primary text-center text-dark form-control mb-5 ">Project Name : {{project.name}}</span>
+                       <p class="card-text text-center text-white font-weight-bold "> Description :  {{project.description}}</p><hr>
+                        <div class="row ">
+                            <div class="col-md-4 mt-5">
+                                    <ul class="list-group mt-3">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Semester : 
+                                          <span class="badge badge-primary badge-pill">{{project.sem}}</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Duration : 
+                                          <span class="badge badge-primary badge-pill">{{project.start | date:"d M,Y"}} to {{project.end  | date:"d M,Y"}}</span>
+                                        </li>
+                                        {% if project.languages %}
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Programing Languages : 
+                                            <span class="badge badge-primary badge-pill">{{project.languages}}</span>
+                                            </li>
+                                        {% endif %}
+                                    </ul>
+                           
                             </div>
-                            <div class="col-md-4">
-                                <p class="card-text text-center text-white"> Duration : {{project.start}} to {{project.end}}</p>
+                            <div class=" col-md-5">
+                                <img src="{{ project.image_url }}" class="rounded float-left" width="700" height="400" alt="No image" >
                             </div>
-                            {% if project.languages %}
-                                <div class="col-md-4">
-                                    <p class="card-text text-center text-white">Programing Languages : {{project.languages}}</p>
-                                </div>
-                            {% endif %}
                         </div>
                         </div>
                     </div>
@@ -60,4 +80,7 @@
         </a>
     </div>
 </div>
+<script>
+    $('.carousel').carousel('dispose')
+</script>
 {% endblock content %}

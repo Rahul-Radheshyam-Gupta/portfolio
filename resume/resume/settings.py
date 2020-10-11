@@ -123,11 +123,16 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 
-
-
-
-
-
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+# media folder position 
+# now its at directory level by default coz 
+# we have not mention upload_to in database
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+
+# show on url like media/image.jpg
 MEDIA_URL = '/media/'
+
+
+# CRISPY_TEMPLATE_PACK = 'bootstrap4'
+# MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+# MEDIA_URL = '/media/'
