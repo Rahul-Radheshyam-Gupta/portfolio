@@ -59,10 +59,10 @@
           <li class="nav-item {% if clicked_on == 'project' %} active {% endif %}">
             <a class="nav-link " href="{% url 'home:project' %}">Project</a>
           </li>
-        </ul>>
-
+        </ul>
+        {% if cv %}
           <a href="{{ cv.cv.url }} " target="_blank" class="btn btn-primary  ml-5">See and Download my updated CV</a>
-
+        {% endif %}
       </nav>
       <main role="main">
           <div class="jumbotron">

@@ -2,7 +2,10 @@ from django.shortcuts import render,HttpResponse,redirect
 from .models import Visitor,Project,MyCv
 # Create your views here.
 def get_cv():
-    return MyCv.objects.first()
+    try:
+        return MyCv.objects.first()
+    except:
+        return False
 
 def dashboard(request):
     clicked_on = 'dashboard'
