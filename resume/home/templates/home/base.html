@@ -60,9 +60,8 @@
             <a class="nav-link " href="{% url 'home:project' %}">Project</a>
           </li>
         </ul>
-        {% if clicked_on == 'dashboard' %}
-          <a href="./static/ext_images/rahul_cv.pdf " target="_blank" class="btn btn-primary  ml-5">See and Download my updated CV</a>
-        {% endif %}
+        <a href="{{cv.cv.url}} " target="_blank" class="btn btn-primary  ml-5">See and Download my updated CV</a>
+
       </nav>
       <main role="main">
           <div class="jumbotron">
