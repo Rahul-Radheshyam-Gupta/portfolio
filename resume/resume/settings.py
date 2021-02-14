@@ -123,8 +123,8 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 
-# media folder position 
-# now its at directory level by default coz 
+# media folder position
+# now its at directory level by default coz
 # we have not mention upload_to in database
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
