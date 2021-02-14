@@ -1,0 +1,263 @@
+  File "manage.py", line 17
+    ) from exc
+         ^
+SyntaxError: invalid syntax
+Watching for file changes with StatReloader
+[25/Oct/2020 06:33:53] "GET / HTTP/1.1" 200 6253
+[25/Oct/2020 06:33:54] "GET /static/ext_images/rahul.jpg HTTP/1.1" 200 5174623
+CommandError: "http://192.168.43.240:8000/" is not a valid port number or address:port pair.
+CommandError: "http://192.168.43.240" is not a valid port number or address:port pair.
+CommandError: "192.168.43.240" is not a valid port number or address:port pair.
+Watching for file changes with StatReloader
+[25/Oct/2020 06:35:35] "GET /about/ HTTP/1.1" 200 10319
+[25/Oct/2020 06:35:51] "GET /project/ HTTP/1.1" 200 12287
+[25/Oct/2020 06:35:51] "GET /media/auto_water.jpg HTTP/1.1" 200 73410
+[25/Oct/2020 06:35:51] "GET /media/grass_cutter.jpg HTTP/1.1" 200 102371
+[25/Oct/2020 06:35:51] "GET /media/password_sec.jpg HTTP/1.1" 200 509308
+[25/Oct/2020 06:35:52] "GET /contact/ HTTP/1.1" 200 8200
+[25/Oct/2020 06:35:53] "GET /project/ HTTP/1.1" 200 12287
+[25/Oct/2020 06:35:57] "GET /contact/ HTTP/1.1" 200 8200
+[25/Oct/2020 06:35:58] "GET /about/ HTTP/1.1" 200 10319
+[25/Oct/2020 06:36:05] "GET / HTTP/1.1" 200 6253
+[25/Oct/2020 06:36:06] "GET /contact/ HTTP/1.1" 200 8200
+[25/Oct/2020 06:36:07] "GET /project/ HTTP/1.1" 200 12287
+[25/Oct/2020 06:36:09] "GET /contact/ HTTP/1.1" 200 8200
+[25/Oct/2020 06:36:10] "GET /about/ HTTP/1.1" 200 10319
+[25/Oct/2020 06:36:11] "GET / HTTP/1.1" 200 6253
+[25/Oct/2020 06:36:12] "GET /contact/ HTTP/1.1" 200 8200
+[25/Oct/2020 06:36:14] "GET /project/ HTTP/1.1" 200 12287
+[25/Oct/2020 06:36:30] "GET /media/rahul_cv.pdf HTTP/1.1" 304 0
+[25/Oct/2020 12:08:25] "GET /contact/ HTTP/1.1" 200 8200
+[25/Oct/2020 12:08:26] "GET /contact/ HTTP/1.1" 200 8200
+[25/Oct/2020 12:26:09] "GET /contact/ HTTP/1.1" 200 8200
+/home/dell/Music/Project/portfolio/resume/resume/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 25, 2020 - 06:35:23
+Django version 3.1.1, using settings 'resume.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+=== post data  <QueryDict: {}>
+=== post data  <QueryDict: {}>
+=== post data  <QueryDict: {}>
+=== post data  <QueryDict: {}>
+=== post data  <QueryDict: {}>
+=== post data  <QueryDict: {}>
+=== post data  <QueryDict: {}>
+=== post data  <QueryDict: {}>
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[25/Oct/2020 12:35:30] "GET /contact/ HTTP/1.1" 200 8200
+[25/Oct/2020 12:35:48] "GET / HTTP/1.1" 200 6253
+[25/Oct/2020 12:35:48] "GET /static/ext_images/rahul.jpg HTTP/1.1" 200 5174623
+Not Found: /favicon.ico
+[25/Oct/2020 12:35:48] "GET /favicon.ico HTTP/1.1" 404 2778
+Not Found: /attendance/
+[25/Oct/2020 12:39:08] "GET /attendance/ HTTP/1.1" 404 2782
+Not Found: /favicon.ico
+[25/Oct/2020 12:39:08] "GET /favicon.ico HTTP/1.1" 404 2782
+[25/Oct/2020 12:39:34] "GET / HTTP/1.1" 200 6253
+[25/Oct/2020 12:39:38] "GET /static/ext_images/rahul.jpg HTTP/1.1" 200 5174623
+Not Found: /favicon.ico
+[25/Oct/2020 12:39:38] "GET /favicon.ico HTTP/1.1" 404 2778
+[25/Oct/2020 12:39:44] "GET / HTTP/1.1" 200 6253
+[25/Oct/2020 12:40:01] "GET / HTTP/1.1" 200 6253
+[25/Oct/2020 12:40:06] "GET /about/ HTTP/1.1" 200 10319
+[25/Oct/2020 12:40:30] "GET /media/rahul_cv.pdf HTTP/1.1" 200 55951
+[25/Oct/2020 12:40:49] "GET /project/ HTTP/1.1" 200 12287
+[25/Oct/2020 12:40:49] "GET /media/auto_water.jpg HTTP/1.1" 200 73410
+[25/Oct/2020 12:40:49] "GET /media/grass_cutter.jpg HTTP/1.1" 200 102371
+[25/Oct/2020 12:40:49] "GET /media/password_sec.jpg HTTP/1.1" 200 509308
+[25/Oct/2020 12:41:07] "GET /contact/ HTTP/1.1" 200 8200
+[25/Oct/2020 12:41:08] "GET /about/ HTTP/1.1" 200 10319
+[25/Oct/2020 12:41:09] "GET / HTTP/1.1" 200 6253
+[25/Oct/2020 12:41:24] "GET /about/ HTTP/1.1" 200 10319
+[25/Oct/2020 12:41:26] "GET /project/ HTTP/1.1" 200 12287
+[25/Oct/2020 12:41:31] "GET /contact/ HTTP/1.1" 200 8200
+[25/Oct/2020 12:41:43] "GET /contact/ HTTP/1.1" 200 8200
+[25/Oct/2020 12:42:06] "GET /contact/ HTTP/1.1" 200 8200
+[25/Oct/2020 12:42:23] "POST /contact/ HTTP/1.1" 200 5137
+[25/Oct/2020 12:42:31] "GET /contact/ HTTP/1.1" 200 8200
+[25/Oct/2020 12:42:34] "GET /project/ HTTP/1.1" 200 12287
+[25/Oct/2020 12:42:42] "GET /project/ HTTP/1.1" 200 12287
+Watching for file changes with StatReloader
+[26/Oct/2020 10:54:25] "GET /project/ HTTP/1.1" 200 12287
+[26/Oct/2020 10:54:25] "GET /media/auto_water.jpg HTTP/1.1" 200 73410
+[26/Oct/2020 10:54:25] "GET /media/grass_cutter.jpg HTTP/1.1" 200 102371
+[26/Oct/2020 10:54:25] "GET /media/password_sec.jpg HTTP/1.1" 200 509308
+Not Found: /favicon.ico
+[26/Oct/2020 10:54:25] "GET /favicon.ico HTTP/1.1" 404 2773
+[26/Oct/2020 10:54:28] "GET /about/ HTTP/1.1" 200 10319
+[26/Oct/2020 10:54:35] "GET /project/ HTTP/1.1" 200 12287
+[26/Oct/2020 10:54:38] "GET /project/ HTTP/1.1" 200 12287
+[26/Oct/2020 10:54:46] "GET /project/ HTTP/1.1" 200 12287
+[26/Oct/2020 10:56:14] "GET / HTTP/1.1" 200 6253
+[26/Oct/2020 10:56:15] "GET /static/ext_images/rahul.jpg HTTP/1.1" 200 5174623
+[26/Oct/2020 10:57:27] "GET / HTTP/1.1" 200 6253
+[26/Oct/2020 10:59:49] "GET / HTTP/1.1" 200 6253
+[26/Oct/2020 10:59:49] "GET /static/ext_images/rahul.jpg HTTP/1.1" 200 5174623
+Not Found: /favicon.ico
+[26/Oct/2020 10:59:49] "GET /favicon.ico HTTP/1.1" 404 2778
+[26/Oct/2020 11:03:14] "GET / HTTP/1.1" 200 6253
+[26/Oct/2020 11:03:15] "GET /static/ext_images/rahul.jpg HTTP/1.1" 200 5174623
+Not Found: /favicon.ico
+[26/Oct/2020 11:03:15] "GET /favicon.ico HTTP/1.1" 404 2778
+[26/Oct/2020 11:03:34] "GET /contact/ HTTP/1.1" 200 8200
+[26/Oct/2020 11:03:37] "GET /about/ HTTP/1.1" 200 10319
+[26/Oct/2020 11:04:02] "GET /contact/ HTTP/1.1" 200 8200
+[26/Oct/2020 11:04:51] "GET /project/ HTTP/1.1" 200 12287
+[26/Oct/2020 11:04:51] "GET /media/auto_water.jpg HTTP/1.1" 200 73410
+[26/Oct/2020 11:04:51] "GET /media/grass_cutter.jpg HTTP/1.1" 200 102371
+[26/Oct/2020 11:04:52] "GET /media/password_sec.jpg HTTP/1.1" 200 509308
+[26/Oct/2020 11:05:13] "GET /media/rahul_cv.pdf HTTP/1.1" 200 55951
+[26/Oct/2020 11:05:25] "GET /project/ HTTP/1.1" 200 12287
+[26/Oct/2020 11:05:48] "GET /about/ HTTP/1.1" 200 10319
+[26/Oct/2020 11:06:19] "GET /about/ HTTP/1.1" 200 10319
+[26/Oct/2020 11:06:22] "GET /about/ HTTP/1.1" 200 10319
+[26/Oct/2020 11:06:29] "GET /contact/ HTTP/1.1" 200 8200
+[26/Oct/2020 11:06:54] "GET /contact/ HTTP/1.1" 200 8200
+[26/Oct/2020 11:06:56] "GET /about/ HTTP/1.1" 200 10319
+[26/Oct/2020 11:08:17] "GET /about/ HTTP/1.1" 200 10319
+[26/Oct/2020 11:08:30] "GET /project/ HTTP/1.1" 200 12287
+[26/Oct/2020 11:08:30] "GET /media/password_sec.jpg HTTP/1.1" 200 509308
+[26/Oct/2020 11:08:30] "GET /media/auto_water.jpg HTTP/1.1" 200 73410
+[26/Oct/2020 11:08:30] "GET /media/grass_cutter.jpg HTTP/1.1" 200 102371
+[26/Oct/2020 11:08:36] "GET /project/ HTTP/1.1" 200 12287
+[26/Oct/2020 11:08:36] "GET /contact/ HTTP/1.1" 200 8200
+[26/Oct/2020 11:08:37] "GET /about/ HTTP/1.1" 200 10319
+[26/Oct/2020 11:08:38] "GET / HTTP/1.1" 200 6253
+[26/Oct/2020 11:08:50] "GET /contact/ HTTP/1.1" 200 8200
+Not Found: /favicon.ico
+[26/Oct/2020 11:09:19] "GET /favicon.ico HTTP/1.1" 404 2778
+[26/Oct/2020 11:09:21] "GET /about/ HTTP/1.1" 200 10319
+[26/Oct/2020 11:16:03] "GET /contact/ HTTP/1.1" 200 8200
+Watching for file changes with StatReloader
+[27/Oct/2020 06:10:55] "GET / HTTP/1.1" 200 7394
+[27/Oct/2020 06:10:56] "GET /static/ext_images/rahul.jpg HTTP/1.1" 200 5174623
+Not Found: /favicon.ico
+[27/Oct/2020 06:10:56] "GET /favicon.ico HTTP/1.1" 404 2778
+[27/Oct/2020 06:11:20] "GET / HTTP/1.1" 200 7421
+[27/Oct/2020 06:11:40] "GET / HTTP/1.1" 200 7427
+[27/Oct/2020 06:11:57] "GET / HTTP/1.1" 200 7395
+[27/Oct/2020 06:12:22] "GET / HTTP/1.1" 200 7394
+[27/Oct/2020 06:12:49] "GET / HTTP/1.1" 200 7408
+[27/Oct/2020 06:12:59] "GET / HTTP/1.1" 200 7408
+[27/Oct/2020 06:13:13] "GET / HTTP/1.1" 200 7342
+[27/Oct/2020 06:13:34] "GET / HTTP/1.1" 200 7342
+[27/Oct/2020 06:13:35] "GET / HTTP/1.1" 200 7342
+[27/Oct/2020 06:13:35] "GET / HTTP/1.1" 200 7342
+[27/Oct/2020 06:13:46] "GET / HTTP/1.1" 200 7342
+[27/Oct/2020 06:14:11] "GET / HTTP/1.1" 200 7343
+[27/Oct/2020 06:14:23] "GET / HTTP/1.1" 200 7343
+[27/Oct/2020 06:38:17] "GET / HTTP/1.1" 200 7343
+[27/Oct/2020 06:38:37] "GET / HTTP/1.1" 200 7343
+[27/Oct/2020 06:38:58] "GET / HTTP/1.1" 200 7343
+[27/Oct/2020 06:45:35] "GET / HTTP/1.1" 200 7106
+[27/Oct/2020 07:02:29] "GET /about/ HTTP/1.1" 200 10319
+[27/Oct/2020 07:02:32] "GET /project/ HTTP/1.1" 200 12287
+[27/Oct/2020 07:02:32] "GET /media/password_sec.jpg HTTP/1.1" 200 509308
+[27/Oct/2020 07:02:34] "GET /contact/ HTTP/1.1" 200 8200
+[27/Oct/2020 07:02:38] "GET / HTTP/1.1" 200 7106
+[27/Oct/2020 07:04:00] "GET / HTTP/1.1" 200 7106
+[27/Oct/2020 07:04:32] "GET / HTTP/1.1" 200 7085
+[27/Oct/2020 07:05:02] "GET / HTTP/1.1" 200 7084
+[27/Oct/2020 07:05:53] "GET / HTTP/1.1" 200 7099
+[27/Oct/2020 07:12:43] "GET / HTTP/1.1" 200 7103
+[27/Oct/2020 07:13:50] "GET / HTTP/1.1" 200 7103
+[27/Oct/2020 07:14:04] "GET / HTTP/1.1" 200 7103
+[27/Oct/2020 07:17:01] "GET / HTTP/1.1" 200 7103
+[27/Oct/2020 07:17:21] "GET / HTTP/1.1" 200 7027
+[27/Oct/2020 07:17:49] "GET / HTTP/1.1" 200 7043
+[27/Oct/2020 07:19:55] "GET / HTTP/1.1" 200 7942
+[27/Oct/2020 07:20:30] "GET / HTTP/1.1" 200 7914
+[27/Oct/2020 07:20:49] "GET / HTTP/1.1" 200 7927
+[27/Oct/2020 07:21:06] "GET / HTTP/1.1" 200 7937
+[27/Oct/2020 07:21:31] "GET / HTTP/1.1" 200 7939
+[27/Oct/2020 07:21:48] "GET / HTTP/1.1" 200 7962
+[27/Oct/2020 07:22:05] "GET / HTTP/1.1" 200 7962
+[27/Oct/2020 07:23:11] "GET / HTTP/1.1" 200 7959
+[27/Oct/2020 07:23:11] "GET / HTTP/1.1" 200 7959
+[27/Oct/2020 07:23:30] "GET / HTTP/1.1" 200 7941
+[27/Oct/2020 07:24:42] "GET /about/ HTTP/1.1" 200 10319
+[27/Oct/2020 07:24:43] "GET /project/ HTTP/1.1" 200 12287
+[27/Oct/2020 07:24:47] "GET / HTTP/1.1" 200 7941
+[27/Oct/2020 07:24:56] "GET / HTTP/1.1" 200 7941
+[27/Oct/2020 07:25:10] "GET / HTTP/1.1" 200 7934
+[27/Oct/2020 07:25:53] "GET / HTTP/1.1" 200 7935
+[27/Oct/2020 07:25:55] "GET / HTTP/1.1" 200 7935
+[27/Oct/2020 07:26:02] "GET / HTTP/1.1" 200 7933
+[27/Oct/2020 07:26:55] "GET / HTTP/1.1" 200 7932
+[27/Oct/2020 07:27:08] "GET / HTTP/1.1" 200 7932
+[27/Oct/2020 07:27:55] "GET / HTTP/1.1" 200 7932
+[27/Oct/2020 07:28:55] "GET /media/rahul_cv.pdf HTTP/1.1" 200 55951
+[27/Oct/2020 07:30:50] "GET / HTTP/1.1" 200 8055
+[27/Oct/2020 07:31:13] "GET / HTTP/1.1" 200 8046
+[27/Oct/2020 07:31:29] "GET / HTTP/1.1" 200 8051
+[27/Oct/2020 07:31:51] "GET / HTTP/1.1" 200 8032
+[27/Oct/2020 07:32:20] "GET / HTTP/1.1" 200 8032
+[27/Oct/2020 07:32:34] "GET / HTTP/1.1" 200 8032
+[27/Oct/2020 07:32:55] "GET / HTTP/1.1" 200 8037
+[27/Oct/2020 07:33:00] "GET / HTTP/1.1" 200 8037
+[27/Oct/2020 07:33:22] "GET / HTTP/1.1" 200 7921
+[27/Oct/2020 07:34:49] "GET / HTTP/1.1" 200 7927
+[27/Oct/2020 07:35:26] "GET / HTTP/1.1" 200 7927
+[27/Oct/2020 07:36:33] "GET / HTTP/1.1" 200 7911
+[27/Oct/2020 07:36:46] "GET / HTTP/1.1" 200 7915
+[27/Oct/2020 07:36:54] "GET / HTTP/1.1" 200 7915
+[27/Oct/2020 07:37:08] "GET / HTTP/1.1" 200 7915
+[27/Oct/2020 07:40:12] "GET / HTTP/1.1" 200 7927
+[27/Oct/2020 07:40:54] "GET / HTTP/1.1" 200 7948
+[27/Oct/2020 07:41:13] "GET / HTTP/1.1" 200 7949
+[27/Oct/2020 07:41:20] "GET / HTTP/1.1" 200 7949
+[27/Oct/2020 07:41:30] "GET / HTTP/1.1" 200 7949
+[27/Oct/2020 07:42:18] "GET / HTTP/1.1" 200 7962
+[27/Oct/2020 07:42:30] "GET / HTTP/1.1" 200 7963
+[27/Oct/2020 07:42:39] "GET / HTTP/1.1" 200 7963
+[27/Oct/2020 07:42:56] "GET / HTTP/1.1" 200 7963
+[27/Oct/2020 07:43:32] "GET / HTTP/1.1" 200 7999
+[27/Oct/2020 07:43:51] "GET / HTTP/1.1" 200 7999
+[27/Oct/2020 07:44:00] "GET / HTTP/1.1" 200 7999
+[27/Oct/2020 07:44:14] "GET / HTTP/1.1" 200 7999
+[27/Oct/2020 07:44:40] "GET / HTTP/1.1" 200 8010
+[27/Oct/2020 07:45:00] "GET / HTTP/1.1" 200 8010
+[27/Oct/2020 07:45:12] "GET / HTTP/1.1" 200 8010
+[27/Oct/2020 07:45:25] "GET /contact/ HTTP/1.1" 200 8400
+[27/Oct/2020 07:45:27] "GET / HTTP/1.1" 200 8010
+[27/Oct/2020 07:45:28] "GET /about/ HTTP/1.1" 200 10519
+[27/Oct/2020 07:45:29] "GET /project/ HTTP/1.1" 200 12487
+[27/Oct/2020 07:45:29] "GET /contact/ HTTP/1.1" 200 8400
+[27/Oct/2020 07:45:30] "GET /contact/ HTTP/1.1" 200 8400
+[27/Oct/2020 07:49:26] "GET /contact/ HTTP/1.1" 200 8454
+[27/Oct/2020 07:49:27] "GET /contact/ HTTP/1.1" 200 8454
+[27/Oct/2020 07:49:28] "GET /contact/ HTTP/1.1" 200 8454
+[27/Oct/2020 07:49:51] "GET /contact/ HTTP/1.1" 200 8448
+[27/Oct/2020 07:51:34] "GET /contact/ HTTP/1.1" 200 8449
+[27/Oct/2020 07:51:53] "GET /contact/ HTTP/1.1" 200 8456
+[27/Oct/2020 07:58:40] "GET /contact/ HTTP/1.1" 200 8447
+[27/Oct/2020 08:00:08] "GET /contact/ HTTP/1.1" 200 8479
+[27/Oct/2020 08:00:23] "GET /contact/ HTTP/1.1" 200 8479
+[27/Oct/2020 08:00:58] "GET /contact/ HTTP/1.1" 200 8479
+[27/Oct/2020 08:01:13] "GET /contact/ HTTP/1.1" 200 8479
+[27/Oct/2020 08:01:29] "GET /contact/ HTTP/1.1" 200 8415
+[27/Oct/2020 08:01:40] "GET /contact/ HTTP/1.1" 200 8419
+[27/Oct/2020 08:02:27] "GET /contact/ HTTP/1.1" 200 8427
+[27/Oct/2020 08:02:32] "GET /contact/ HTTP/1.1" 200 8429
+[27/Oct/2020 08:03:22] "GET /contact/ HTTP/1.1" 200 8433
+[27/Oct/2020 08:03:43] "GET /contact/ HTTP/1.1" 200 8428
+[27/Oct/2020 08:03:56] "GET /contact/ HTTP/1.1" 200 8434
+[27/Oct/2020 08:04:16] "GET /contact/ HTTP/1.1" 200 8456
+[27/Oct/2020 08:04:17] "GET /contact/ HTTP/1.1" 200 8456
+[27/Oct/2020 08:04:34] "GET /contact/ HTTP/1.1" 200 8456
+[27/Oct/2020 08:05:01] "GET /contact/ HTTP/1.1" 200 8465
+[27/Oct/2020 08:05:10] "GET /contact/ HTTP/1.1" 200 8465
+[27/Oct/2020 08:05:18] "GET /contact/ HTTP/1.1" 200 8465
+[27/Oct/2020 08:06:05] "GET /contact/ HTTP/1.1" 200 8467
+[27/Oct/2020 08:06:15] "GET /contact/ HTTP/1.1" 200 8467
+[27/Oct/2020 08:06:21] "GET /contact/ HTTP/1.1" 200 8467
+[27/Oct/2020 08:06:45] "GET /project/ HTTP/1.1" 200 12543
+[27/Oct/2020 08:06:47] "GET /contact/ HTTP/1.1" 200 8467
+[27/Oct/2020 08:06:48] "GET /about/ HTTP/1.1" 200 10575
+[27/Oct/2020 08:06:49] "GET / HTTP/1.1" 200 8066
+[27/Oct/2020 08:06:49] "GET / HTTP/1.1" 200 8066
+[27/Oct/2020 08:07:06] "GET / HTTP/1.1" 200 8066

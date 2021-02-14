@@ -2,43 +2,129 @@
 {% load static %}
 
 {% block content %}
+<style>
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .title {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 4px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 450px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  color: white;
+  background-color: #000;
+}
+  </style>
 
 <div class="">
-<span class="border form-control text-center border-primary mb-3">  <h4> <div class="text"></div> </h4></span><hr>
-
   <div class="row">
     <div class="col-md-4">
-      <img src="./static/ext_images/rahul.jpg" class="rounded float-left" width="350" height="500" alt="Men" >
+      <div class="card">
+        <p class="title">Mr. Rahul Gupta</p>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./static/ext_images/rahul.jpg" class=""  alt="Rahul" style="width:100%;" height="450">
+            </div>
+            <div class="flip-card-back">
+              <h5 class="mt-5 mb-4">Software Developer</h5>
+              <p class="mt-3 ">Mumbai University</p>
+            </div>
+          </div>
+        </div>
+    </div>  
     </div>
     <div class="col-md-7 mr-1">
-        <h3 class="">Hey, Hi! <strong>I'm Rahul Gupta..</strong></h3><hr><br>
-        <h5 class=" text-success"> A small intro about myself.. </h5>
-                  <p>I am a <b>Certified Python Programmer and currently working as a software developer at Teamnest HR Solutions Pvt. Ltd. </b>
-    and currently working on the <strong> Django Framework </strong>.and also have good knowledge of frontend side requirements like JS, 
-    Jquary, Bootstrap.. etc. <br><br>
+          <h3 class="">Hey, Hi! <strong>I'm Rahul Gupta..</strong></h3><hr><br>
+          <h5 class=" text-success"> A small intro about myself.. </h5>
+                    <p>I am a <b>Certified Python Programmer and currently working as a software developer at Teamnest HR Solutions Pvt. Ltd. </b>
+      and currently working on the <strong> Django Framework </strong>.and also have good knowledge of frontend side requirements like JS, 
+      Jquary, Bootstrap.. etc. <br><br>
 
-    <div class="row" >
-      <div class="col-md-6">
-        <div class="form-group">
-          <span class="border btn btn-success border-primary" data-toggle="collapse" data-target="#objective"> My Objective &nbsp; <i class="fas fa-caret-square-down"></i></span>
+      <div class="row" >
+        <div class="col-md-6">
+          <div class="form-group">
+            <span class="border btn btn-success border-primary" data-toggle="collapse" data-target="#objective"> My Objective &nbsp; <i class="fas fa-caret-square-down"></i></span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <span class="border btn btn-success border-primary" data-toggle="collapse" data-target="#think"> My Quote &nbsp; <i class="fas fa-caret-square-down"></i></span>
+          </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="form-group">
-          <span class="border btn btn-success border-primary" data-toggle="collapse" data-target="#think"> My Quote &nbsp; <i class="fas fa-caret-square-down"></i></span>
-        </div>
+          <div id="objective" class="collapse mb-3">
+          <b>Objective</b>:- To work for an organization which provides me the opportunity to improve my skills and knowledge to growth along with the organization objective.
+          </div>
+          <div id="think" class="collapse mb-3">
+          <b>Qoute</b>:- Be your better Version 
+          </div>
+
+          <p><a class="btn btn-primary btn-block mt-5" href="{% url 'home:about' %}"> Click here to know about my Experiences and Internship  &nbsp; &raquo;</a></p>
+
       </div>
-    </div>
-        <div id="objective" class="collapse mb-3">
-        <b>Objective</b>:- To work for an organization which provides me the opportunity to improve my skills and knowledge to growth along with the organization objective.
-        </div>
-        <div id="think" class="collapse mb-3">
-        <b>Qoute</b>:- Be your better Version 
-        </div>
-
-        <p><a class="btn btn-primary btn-block mt-5" href="{% url 'home:about' %}"> Click here to know about my Experiences and Internship  &nbsp; &raquo;</a></p>
-
-    </div>
 
   </div>
 </div>
