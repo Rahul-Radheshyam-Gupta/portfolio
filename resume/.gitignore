@@ -1,0 +1,15 @@
+.idea/
+**/logs/
+*.pyc
+media/
+db.sqlite3
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
+**/migrations/__init__.pyc
+static/CACHE/
+robots.txt
+.vscode/
+core/.DS_Store
+.vs
+.DS_Store
