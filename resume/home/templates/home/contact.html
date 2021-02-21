@@ -4,41 +4,40 @@
 
 <div class="">
   <div class="row">
-    <div class="col-lg-3 col-md-12 col-12 mr-1">
-      <span class="border text-dark form-control bg-success"><h5>My Contatc Details : </h5></span><hr><br>
+    <div class="col-lg-3 col-md-12 col-12">
+      <h5>My Contatc Details : </h5><hr>
       <div class="form-group">
         <label for="uname">
           <span class="	fas fa-user-graduate"></span>
           Educations</label>
-        <span class="border form-control border-primary">Graduation from Mumbai University</span>
+        <span class="border form-control border-primary" style="width: 100%;">Graduation from Mumbai University</span>
       </div>
       <div class="form-group">
         <label for="uname">
           <i class="fa fa-envelope"></i> Email id</label>
-        <span class="border form-control border-primary">MrRahulGupta0096@gmail.com</span>
+        <span class="border form-control border-primary" style="width: 100%;">MrRahulGupta0096@gmail.com</span>
       </div>
       <div class="form-group">
         <label for="uname">
           <i class="fa fa-phone-square"></i> Contatc No.</label>
-        <span class="border form-control border-primary">9865896315</span>
+        <span class="border form-control border-primary" style="width: 100%;">9865896315</span>
       </div>
 
-      <p class="mt-5">Connect with me</p>
+      <p class="mt-3">Connect with me</p>
       <div class="form-group">
         <a href="https://www.linkedin.com/in/rahul-gupta-1b2578170/" target="_blank" class="btn btn-primary form-control mb-2"> <i class="fab fa-linkedin"></i> &nbsp; LinkedIn</a>
         <a href="https://github.com/Rahul-Radheshyam-Gupta" target="_blank" class="btn btn-primary form-control"> <i class="fab fa-github-square"></i> &nbsp; GitHub</a>
       </div>
-
-      <br><hr> 
+      <hr> 
       <p class="small"> <span class="text-danger" >**</span>Welcome to your feedback and suggestions
         <br>
         send me your response by filling the form 
       </p>
     </div>
-    <div class="col-lg-7 col-md-12 col-12 ml-1">
+    <div class="col-lg-7 col-md-12 col-12">
 
 
-      <h4>Do you have any message for me? Send Me..</h4><hr>
+      <h5>Do you have any message for me? Send Me..</h5><hr>
       <form action="{% url 'home:contact' %}" class="was-validated" method="POST">
           {% csrf_token %}
         <div class="form-group">
@@ -78,7 +77,7 @@
             <!-- <div class="small text-secondary">Leave it uncheck if you are just here to see portfolio.</div> -->
           </label>
         </div>
-        <button type="submit" class=" ml-5 btn btn-primary" style="width: 650px;">Submit</button>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
       </form>
 
     </div>

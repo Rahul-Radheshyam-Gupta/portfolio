@@ -46,12 +46,12 @@
 </head>
 <body class="">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-default navbar-fixed-top">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item {% if clicked_on == 'dashboard' %} active {% endif %}">
             <a class="nav-link" href="{% url 'home:dashboard' %}">Dashboard</a>
           </li>
           <li class="nav-item {% if clicked_on == 'about' %} active {% endif %}">
-            <a class="nav-link" href="{% url 'home:about' %}">About</a>
+            <a class="nav-link" href="{% url 'home:about' %}">Experience</a>
           </li>
           <li class="nav-item {% if clicked_on == 'contact' %} active {% endif %}">
             <a class="nav-link" href="{% url 'home:contact' %}">Contact</a>
@@ -59,23 +59,27 @@
           <li class="nav-item {% if clicked_on == 'project' %} active {% endif %}">
             <a class="nav-link " href="{% url 'home:project' %}">Project</a>
           </li>
+          <li>
+            <a href="{% static 'ext_images/rahul_cv.pdf' %}" target="_blank" class="nav-link mx-auto" >View My CV</a>
+          </li>
         </ul>
-        <span class="border form-control text-center border-primary ml-5 mr-5" style="width: 600px; height: 45px;">  <h4> <div class="text"></div> </h4></span>
-        <a href="{% static 'ext_images/rahul_cv.pdf' %}" target="_blank" class="btn btn-primary form-control mx-auto" style="width: 200px; height: 40px;margin-top:10px;"><i class="fa fa-download" aria-hidden="true"></i> &nbsp;Download CV</a>
+        <span class="border form-control text-center border-primary" style="height: 100%; width:50%;">  <h4> <div class="text"></div> </h4></span><br>&nbsp;
+        <!-- <a href="{% static 'ext_images/rahul_cv.pdf' %}" target="_blank" class=" mx-auto" style="width:100%; height: 100%;margin-top:10px;"><i class="fa fa-download" aria-hidden="true"></i> &nbsp;Download My Updated CV</a> -->
 
       </nav>
-      <main role="main">
+      <div role="main">
           <div class="jumbotron">
           {% block content %}
 
           {% endblock content %}
         </div>
-        </div>
-
-      </main>
+      </div>
 
     <footer class="container">
-      <p>&copy; Copyright 2020-2021 by <strong>Rahul Gupta</strong></p>
+      <p>&copy; Copyright 2020-2021 by <strong>Rahul Gupta</strong>&nbsp;-&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/rahul-gupta-1b2578170/" target="_blank"  style="text-decoration: none;" > <i class="fab fa-linkedin"></i>&nbsp;</a>&nbsp;
+            <a href="https://github.com/Rahul-Radheshyam-Gupta" target="_blank"  style="text-decoration: none;" > <i class="fab fa-github-square"></i>  &nbsp;</a>
+          </p>
     </footer>
 
 
