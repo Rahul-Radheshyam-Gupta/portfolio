@@ -55,10 +55,10 @@
 
         <p class="small text-secondary mb-2 ml-2" > <span class="small text-danger" >* &nbsp; </span>click on below button to see details on same page </p>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-12">
             <a href="javascript.void(0)" type="button" class="btn btn1 btn-primary" data-toggle="collapse" data-target="#demo">Languages I Know &nbsp; <i class="fas fa-caret-square-down"></i></a>
-            <div id="demo" class="collapse">
-                <br>
+            <div id="demo" class="collapse mb-15">
+
                 <ol class="list-group">
                     <li class="list-group-item list-group-item-light text-dark">Python</li>
                     <li class="list-group-item list-group-item-light text-dark">Javascript</li>
@@ -66,20 +66,18 @@
                 </ol>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-12">
             <a href="javascript.void(0)" type="button" class="btn btn1 btn-primary" data-toggle="collapse" data-target="#demo4"> Frameworks I Know &nbsp; <i class="fas fa-caret-square-down"></i></a>
-            <div id="demo4" class="collapse">
-                <br>
+            <div id="demo4" class="collapse mb-15">
                 <ol class="list-group">
                   <li class="list-group-item list-group-item-light text-dark">Django</li>
                   <li class="list-group-item list-group-item-light text-dark">Django Restful API</li>
               </ol>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-12">
             <a href="javascript.void(0)" type="button" class="btn btn1  btn-primary" data-toggle="collapse" data-target="#demo2">Frontend Tools I Know &nbsp; <i class="fas fa-caret-square-down"></i></a>
-            <div id="demo2" class="collapse">
-                <br>
+            <div id="demo2" class="collapse mb-15">
                 <ol class="list-group">
                   <li class="list-group-item list-group-item-light text-dark">HTML/CSS</li>
                   <li class="list-group-item list-group-item-light text-dark">Javascript</li>
@@ -88,10 +86,9 @@
               </ol>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-12">
             <a href="javascript.void(0)" type="button" class="btn btn1 btn-primary" data-toggle="collapse" data-target="#demo3">Others skills I Know &nbsp; <i class="fas fa-caret-square-down"></i></a>
-            <div id="demo3" class="collapse">
-                <br>
+            <div id="demo3" class="collapse mb-15">
                 <ol class="list-group">
                   <li class="list-group-item list-group-item-light text-dark">Pandas</li>
                   <li class="list-group-item list-group-item-light text-dark">Numpy</li>
@@ -132,6 +129,10 @@
     </div>
   </div>
 
+
+<script>
+  $("#demo").collapse("show");
+</script>
 
   {% endblock content %}
 
