@@ -12,11 +12,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <style>
     body {
       height: 100%;
       margin: 0px;
-      background-color: #ebe5e5
+      background-color: #ebe5e5;
+      font-family: montserrat!important;
+
     }
 
     .bg {
@@ -47,32 +50,173 @@
   }
 
 
+
+
+
+
+
+
+
+
+
+  *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+.common{
+  background: #0082e6;
+  height: 60px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 20px!important;
+  line-height: 50px;
+  padding: 0 100px;
+  padding-top:15px;
+  font-weight: bold;
+}
+.common ul{
+  float: right;
+  margin-right: 30px!important;
+}
+.common ul li{
+  display: inline-block;
+  line-height: 55px;
+  margin: 0 5px;
+}
+.common ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration:none;
+}
+.common a.active,.common a:hover{
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  transform:scale(1.2);
+
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  .common{
+    height: 85px;
+  }
+  label.logo{
+    font-size: 10px!important;
+    padding-left: 50px;
+  }
+  label.logo{
+    width: 80%;
+    height: 80px;
+  }
+  .common ul li a{
+    font-size: 14px!important;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 858px){
+  .common{
+    height: 85px;
+  }
+  .checkbtn{
+    display: block;
+  }
+  .common ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:black;
+    margin-top:10px;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    /* transition: all .5s; */
+  }
+  .common ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    border-bottom:1px solid white;
+  }
+  .common ul li a{
+    font-size: 14px!important;
+    opacity: 1;
+    font-weight: bolder;
+    padding-bottom: 10px;
+  }
+  .common ul li a:hover{
+    transform:scale(1.2);
+   }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background:black;
+  background-size: cover;
+}
+.header-qoute{
+  height: 80px;
+  width: 100%;
+  color:white;
+  margin-
+}
+
+
 </style>
 </head>
 <body class="">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-default navbar-fixed-top">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item {% if clicked_on == 'dashboard' %} active {% endif %}">
-            <a class="nav-link" href="{% url 'home:dashboard' %}">Dashboard</a>
+
+
+    <nav class="bg-dark navbar-dark common  navbar-fixed-top">
+      <label class="logo">  <span class="header-qoute" >  <h4> <div class="text"></div> </h4></span><br>&nbsp;  </label>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="mx-auto">
+          <li class="{% if clicked_on == 'dashboard' %} active {% endif %}">
+            <a class="" href="{% url 'home:dashboard' %}">Dashboard</a>
           </li>
-          <li class="nav-item {% if clicked_on == 'about' %} active {% endif %}">
-            <a class="nav-link" href="{% url 'home:about' %}">Experience</a>
+          <li class="{% if clicked_on == 'about' %} active {% endif %}">
+            <a class="" href="{% url 'home:about' %}">Experience</a>
           </li>
-          <li class="nav-item {% if clicked_on == 'contact' %} active {% endif %}">
-            <a class="nav-link" href="{% url 'home:contact' %}">Contact</a>
+          <li class="{% if clicked_on == 'contact' %} active {% endif %}">
+            <a class="" href="{% url 'home:contact' %}">Contact</a>
           </li>
-          <li class="nav-item {% if clicked_on == 'project' %} active {% endif %}">
-            <a class="nav-link " href="{% url 'home:project' %}">Project</a>
+          <li class="{% if clicked_on == 'project' %} active {% endif %}">
+            <a class=" " href="{% url 'home:project' %}">Project</a>
           </li>
           <li>
-            <a href="{% static 'ext_images/rahul_cv.pdf' %}" target="_blank" class="nav-link mx-auto" >View My CV</a>
+            <a href="{% static 'ext_images/rahul_cv.pdf' %}" target="_blank" class="" >View My CV</a>
           </li>
         </ul>
-        <span class="border form-control text-center border-primary" style="height: 100%; width:50%;">  <h4> <div class="text"></div> </h4></span><br>&nbsp;
         <!-- <a href="{% static 'ext_images/rahul_cv.pdf' %}" target="_blank" class=" mx-auto" style="width:100%; height: 100%;margin-top:10px;"><i class="fa fa-download" aria-hidden="true"></i> &nbsp;Download My Updated CV</a> -->
 
       </nav>
-      <div role="main">
+      <section></section>
+      <div class="main" role="main">
           <div class="jumbotron">
           {% block content %}
 
@@ -90,6 +234,12 @@
 
 
 <script>
+$("section").hide();
+$(".checkbtn").click(function(){
+    $("section").toggle(700);
+    $(".container").toggle(800);
+    $(".main").toggle(800);
+  })
 $(document).ready(function(){
   $(".nav-tabs a").click(function(){
     $(this).tab('show');
