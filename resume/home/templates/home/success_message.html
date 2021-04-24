@@ -6,20 +6,34 @@
     .full{
         height: 100%;
     }
+    *{
+        font-family:sans-serif;
+    }
+    .col-4:hover{
+        transform:scale(1.2);
+        opacity:1;
+    }
 </style>
 
-<div class="container full">
-    <div class="card-block">
-        <h5 class=" text-success mt-5"> <strong class="">Dear {{name}} ,</strong> Congratulation !! Your message sent successfully. </h5><hr><br>
-        <pre class="text-primary mt-5 mb-5">
-            Thanks {{name}} for your valuable message. I will reply you soon on provided contact details. 
-        </pre>
+<div class="container">
+    <div class="card p-3">
         <div class="row">
-            <div class=" col-md-4">
-                <a href="{% url 'home:dashboard' %}" class="btn btn-danger ml-5" > Back to Dashboard Page </a>
+            <div  class="col-md-12">
+                <h5 class=" text-success mt-5"> <strong class="">Dear {{name}} ,</strong> Congratulation !! Your message sent successfully. </h5><hr><br>
+                <p class="text-center bold mt-5 mb-5 mx-auto">
+                    Thanks {{name}} for your valuable message. I will reply you soon on provided contact details. 
+                </p>
             </div>
-            <div class="col-md-4">
-                <a href="{% url 'home:contact' %}" class="btn btn-primary" > Send Another Response </a>
+        </div>
+        <div class="row mt-3 mx-auto">
+            <div class="col-4">
+                <a href="https://rahulgupta1995.pythonanywhere.com/" class="btn btn-sm btn-primary" > Ecom</a>
+            </div>
+            <div class="col-4">
+                <a href="{% url 'home:dashboard' %}" class="btn btn-sm btn-secondary mr-3" > Dashboard </a>
+            </div>
+            <div class="col-4">
+                <a href="{% url 'home:contact' %}" class="ml-3 btn btn-sm btn-danger" > Back&nbsp;</a>
             </div>
         </div>
     </div>
